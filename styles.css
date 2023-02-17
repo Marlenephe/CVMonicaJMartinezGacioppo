@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css?family=Poppons:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popping', sans-serif;
+}
+
+body {
+    background-color: rgb(243, 239, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: rgb(211, 207, 207);
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+
+}
+
+.container .left-Side {
+    position: relative;
+    background: rgb(82, 81, 81);
+    padding: 40px;
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.profileText h2 {
+    color: rgb(186, 186, 194);
+    font-size: 0.8en;
+    margin-top: 300px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.4en;
+
+
+}
+
+.contactoinfo {
+    padding-top: 40px;
+}
+
+.title {
+    color: rgb(186, 186, 194);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+
+}
+
+.title:hover {
+    color: #2a7da2;
+}
+
+.contactoinfo ul {
+    position: relative;
+}
+
+.contactoinfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+
+
+}
+
+.contactoinfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4
+}
+
+.contactoinfo ul li span {
+    color: #e0dede;
+    font-weight: 300;
+}
+
+.contactoinfo.educacion li {
+
+    margin-bottom: 15px;
+}
+
+.contactoinfo.educacion h5 {
+    color: #03a9f4;
+    font-weight: 500;
+}
+
+.contactoinfo.educacion h4:nth-child(2) {
+    color: #e0dede;
+    font-weight: 500;
+}
+
+.contactoinfo.educacion h4 {
+    color: #e0dede;
+    ;
+    font-weight: 300;
+}
+
+.contactoinfo.idioma .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #212222;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactoinfo.idioma .percent div {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    height: 100%;
+    background: #03a9f4;
+}
+
+
+
+.container .right-Side {
+    position: relative;
+
+    background: rgb(186, 186, 194);
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 50px;
+    margin-top: 30px;
+
+
+}
+
+/* .about:last-child {
+    margin-bottom: 200px;
+} */
+
+#perfil {
+    margin-top: 300px;
+}
+
+
+
+
+.title2 {
+    color: rgb(82, 81, 81);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    width: auto;
+
+}
+
+.title2:hover {
+    color: #2a7da2;
+}
+
+p {
+    color: #333;
+    margin-top: 30px;
+
+}
+
+.box {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.about .box .year_company {
+    min-width: 150px;
+
+}
+
+.about .box .year_company h5 {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 600;
+
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16PX;
+
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 500;
+
+}
+
+.skills .box .porcent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+
+}
+
+.skills .box .porcent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+
+
+
+
+
+.barraHorizontal {
+    position: absolute;
+    background: #8fc7e0;
+    margin-left: 0px;
+    margin-top: 80px;
+    width: 100%;
+    height: 200px;
+    padding: 0;
+    z-index: 1;
+
+
+
+
+}
+
+.barraHorizontal .img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 110%;
+    overflow: hidden;
+    margin: 0px 0px 2px 70px;
+    padding: auto;
+}
+
+.barraHorizontal .img img {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.text h2 {
+    Color: rgb(85, 85, 87);
+    font-size: 1.5em;
+    text-align: center;
+    padding-left: 200px;
+    margin-top: 80px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+
+
+
+
+.barraMedidas {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 10;
+    width: 100%;
+}
+
+.barraNone {
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Aqui esta el css de los botones de las redes */
+.buttons {
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 110px;
+    /*solo agregue un margen top */
+
+
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: rgb(82, 81, 81);
+    color: #03a9f4;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    margin-top: 20px;
+}
+
+.buttons a:hover {
+    transform: scale(1.2);
+}
